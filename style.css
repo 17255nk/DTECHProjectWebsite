@@ -6,6 +6,11 @@ body {
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  font-style: bold;
+  color: white;
 }
+
+body {
+  background-color: dimgray;
+}
+

@@ -1,16 +1,36 @@
 /* CSS files add styling rules to your content */
 <style>
+
+/***Main Styles****/
+
+
 body {
  font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  
 }
 
 h1 {
   font-style: bold;
   color: white;
+  font-family: 'Antic Slab', serif;
 }
 
 body {
   background-color: lightblue;
 }
+
+h2{font-family: 'Antic Slab', serif;}
+
+p{font-family: 'Antic Slab', serif;}
+
+li{font-family: 'Antic Slab', serif;}
+
+img {
+  width: 100%;
+  max-width: 600px;
+}
+
+
+
 </style>

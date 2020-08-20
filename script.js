@@ -2,9 +2,10 @@
     to your site with Javascript */
 
 // prints "hi" in the browser's dev tools console
-console.log("hi");
+
 
 <script>
+  
 var slideIndex = 1;
 showDivs(slideIndex);
 

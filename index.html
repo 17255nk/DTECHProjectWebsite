@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="/style.css" />
 
     <script src="/script.js" defer></script>
-    
-     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
-    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-   
-  
 
     <div class="w3-row w3-col s12 m12 l12">
       <!--Header-->
-      
+
       <div
         class="w3-container w3-black w3-padding-32 w3-row w3-col s12 m12 l12"
       >
@@ -42,17 +42,112 @@
       <div style="margin-left:25%"></div>
 
       <!--Text-->
-      <div class="w3-container w3-round w3-row w3-col s12 m12 l6">
+
+      <div class="w3-container w3-round w3-row w3-col s12 m12 l12">
         <h2>A Guide on the Basics</h2>
         <p>
           This website serves as a simple guide for the very basics of the Adobe
           Creative Cloud Service, you can find useful information on the most
           popular apps such as Photoshop, Premiere Pro, After Effects,
-          Illustrator, Lightroom and more!
+          Illustrator & Lightroom.
         </p>
       </div>
 
-      
+      <!--SLIDESHOW-->
+
+
+
+      <div class="w3-content w3-display-container">
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fphotoshopslideshow.png?v=1597709216453"
+        />
+
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fpremiereproslideshow.png?v=1597709277457"
+        />
+
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fillustratorslideshow.png?v=1597709200150"
+        />
+
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Flightroomscreenshot.png?v=1597709207825"
+        />
+
+        <img
+          class="mySlides"
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Faftereffectsslideshow.jpg?v=1597709285645"
+        />
+
+        <div
+          class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+        >
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">
+            &#10094;
+          </div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">
+            &#10095;
+          </div>
+          <span
+            class="w3-badge demo w3-border w3-transparent w3-hover-white"
+            onclick="currentDiv(1)"
+          ></span>
+          <span
+            class="w3-badge demo w3-border w3-transparent w3-hover-white"
+            onclick="currentDiv(2)"
+          ></span>
+          <span
+            class="w3-badge demo w3-border w3-transparent w3-hover-white"
+            onclick="currentDiv(3)"
+          ></span>
+          <span
+            class="w3-badge demo w3-border w3-transparent w3-hover-white"
+            onclick="currentDiv(4)"
+          ></span>
+          <span
+            class="w3-badge demo w3-border w3-transparent w3-hover-white"
+            onclick="currentDiv(5)"
+          ></span>
+        </div>
+      </div>
+
+      <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs((slideIndex += n));
+        }
+
+        function currentDiv(n) {
+          showDivs((slideIndex = n));
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = x.length;
+          }
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " w3-white";
+        }
+      </script>
+
       <!--Images-->
       <img
         src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2FScreen%20Shot%202020-06-19%20at%209.20.33%20AM.png?v=1592515440086"
@@ -60,9 +155,7 @@
         class="w3-image"
       />
     </div>
-    
 
-    <br>
+    <br />
   </body>
 </html>
- 

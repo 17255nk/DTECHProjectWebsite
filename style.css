@@ -2,12 +2,13 @@
 <style>
 
 
-
 body {
  font-family: helvetica, arial, sans-serif;
   margin: 2em;
   
 }
+
+/***Fonts***/
 
 h1 {
   font-style: bold;
@@ -26,14 +27,38 @@ p{font-family: 'Antic Slab', serif;}
 
 li{font-family: 'Antic Slab', serif;}
 
+
+/***Images***/
+
 img {
   width: 100%;
   max-width: 600px;
 }
 
+/***Text Align CSS***/
+
 h1{text-align:center;}
 h2{text-align:center;}
 p{text-align:center;}
+
+/***Slideshow Styles**/
+
+      <style>
+        .mySlides {
+          display: none;
+        }
+        .w3-left,
+        .w3-right,
+        .w3-badge {
+          cursor: pointer;
+        }
+        .w3-badge {
+          height: 13px;
+          width: 13px;
+          padding: 0;
+        }
+      </style>
+
 
 
 

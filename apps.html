@@ -16,15 +16,32 @@
       <h1>Applications</h1>
     </div>
 
-    <div class="w3-bar w3-black">
-      <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-      <a href="overview.html" class="w3-bar-item w3-button w3-mobile"
-        >Overview</a
-      >
-      <a href="apps.html" class="w3-bar-item w3-button w3-mobile"
-        >Applications</a
-      >
-    </div>
+     <!--Nav Bar-->
+
+      <div style="margin-left:25%"></div>
+
+     <div class="w3-bar w3-black">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="overview.html" class="w3-bar-item w3-button w3-hide-small">Overview</a>
+  <a href="apps.html" class="w3-bar-item w3-button w3-hide-small">Applications</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+  <a href="overview.html" class="w3-bar-item w3-button">Overview</a>
+  <a href="apps.html" class="w3-bar-item w3-button">Applications</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script> 
 
     <div class="w3-panel w3-padding-5">
       <h4>

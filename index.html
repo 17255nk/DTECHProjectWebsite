@@ -14,11 +14,16 @@
       href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <div class="w3-row w3-col s12 m12 l12">
+      
       <!--Header-->
 
       <div
@@ -29,18 +34,34 @@
 
       <!--Nav Bar-->
 
-      <div class="w3-bar w3-black">
-        <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-        <a href="overview.html" class="w3-bar-item w3-button w3-mobile"
-          >Overview</a
-        >
-        <a href="apps.html" class="w3-bar-item w3-button w3-mobile"
-          >Applications</a
-        >
-      </div>
 
       <div style="margin-left:25%"></div>
 
+     <div class="w3-bar w3-black">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="overview.html" class="w3-bar-item w3-button w3-hide-small">Overview</a>
+  <a href="apps.html" class="w3-bar-item w3-button w3-hide-small">Applications</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+  <a href="overview.html" class="w3-bar-item w3-button">Overview</a>
+  <a href="apps.html" class="w3-bar-item w3-button">Applications</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script> 
+      
+    
+      
       <!--Text-->
 
       <div class="w3-container w3-round w3-row w3-col s12 m12 l12">
@@ -55,94 +76,50 @@
 
       <!--SLIDESHOW-->
 
-      <div class="w3-content w3-display-container">
+      <div class="w3-content w3-section" style="max-width:500px">
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fphotoshopslideshow.png?v=1597709216453"
+          style="width:100%"
         />
-          
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fpremiereproslideshow.png?v=1597709277457"
+          style="width:100%"
         />
-
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fillustratorslideshow.png?v=1597709200150"
+          style="width:100%"
         />
-
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Flightroomscreenshot.png?v=1597709207825"
+          style="width:100%"
         />
-
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Faftereffectsslideshow.jpg?v=1597709285645"
+          style="width:100%"
         />
-
-        <div
-          class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
-        >
-          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">
-            &#10094;
-          </div>
-          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">
-            &#10095;
-          </div>
-          <span
-            class="w3-badge demo w3-border w3-transparent w3-hover-white"
-            onclick="currentDiv(1)"
-          ></span>
-          <span
-            class="w3-badge demo w3-border w3-transparent w3-hover-white"
-            onclick="currentDiv(2)"
-          ></span>
-          <span
-            class="w3-badge demo w3-border w3-transparent w3-hover-white"
-            onclick="currentDiv(3)"
-          ></span>
-          <span
-            class="w3-badge demo w3-border w3-transparent w3-hover-white"
-            onclick="currentDiv(4)"
-          ></span>
-          <span
-            class="w3-badge demo w3-border w3-transparent w3-hover-white"
-            onclick="currentDiv(5)"
-          ></span>
-        </div>
       </div>
 
       <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+        var myIndex = 0;
+        carousel();
 
-        function plusDivs(n) {
-          showDivs((slideIndex += n));
-        }
-
-        function currentDiv(n) {
-          showDivs((slideIndex = n));
-        }
-
-        function showDivs(n) {
+        function carousel() {
           var i;
           var x = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("demo");
-          if (n > x.length) {
-            slideIndex = 1;
-          }
-          if (n < 1) {
-            slideIndex = x.length;
-          }
           for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
           }
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-white", "");
+          myIndex++;
+          if (myIndex > x.length) {
+            myIndex = 1;
           }
-          x[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].className += " w3-white";
+          x[myIndex - 1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
         }
       </script>
 

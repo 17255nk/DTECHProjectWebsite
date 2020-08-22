@@ -1,11 +1,7 @@
 /***Main Styles****/
-<style>
-
-
-body {
- font-family: helvetica, arial, sans-serif;
+<style > body {
+  font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  
 }
 
 /***Font***/
@@ -13,20 +9,24 @@ body {
 h1 {
   font-style: bold;
   color: white;
-  font-family: 'Antic Slab', serif;
+  font-family: "Antic Slab", serif;
 }
 
 body {
   background-color: lightblue;
 }
 
+h2 {
+  font-family: "Antic Slab", serif;
+}
 
-h2{font-family: 'Antic Slab', serif;}
+p {
+  font-family: "Antic Slab", serif;
+}
 
-p{font-family: 'Antic Slab', serif;}
-
-li{font-family: 'Antic Slab', serif;}
-
+li {
+  font-family: "Antic Slab", serif;
+}
 
 /***Images***/
 
@@ -37,29 +37,29 @@ img {
 
 /***Text Align CSS***/
 
-h1{text-align:center;}
-h2{text-align:center;}
-p{text-align:center;}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
 
 /***Slideshow Styles**/
 
-      <style>
-        .mySlides {
-          display: none;
-        }
-        .w3-left,
-        .w3-right,
-        .w3-badge {
-          cursor: pointer;
-        }
-        .w3-badge {
-          height: 13px;
-          width: 13px;
-          padding: 0;
-        }
-      </style>
-
-
-
-
+<style > .mySlides {
+  display: none;
+}
+.w3-left,
+.w3-right,
+.w3-badge {
+  cursor: pointer;
+}
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
 </style>

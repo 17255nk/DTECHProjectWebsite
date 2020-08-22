@@ -16,166 +16,332 @@
       <h1>Photoshop</h1>
     </div>
 
-     <!--Nav Bar-->
+    <!--Nav Bar-->
 
-      <div style="margin-left:25%"></div>
+    <div style="margin-left:25%"></div>
 
-     <div class="w3-bar w3-black">
-  <a href="index.html" class="w3-bar-item w3-button">Home</a>
-  <a href="overview.html" class="w3-bar-item w3-button w3-hide-small">Overview</a>
-  <a href="apps.html" class="w3-bar-item w3-button w3-hide-small">Applications</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-</div>
-
-<div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-  <a href="overview.html" class="w3-bar-item w3-button">Overview</a>
-  <a href="apps.html" class="w3-bar-item w3-button">Applications</a>
-</div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("demo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script> 
-    
- <!--Main Content-->   
-    
-       <div class="w3-container w3-round w3-row w3-col s12 m12 l12">
-    
-   <h2>
-     Creating New Project
-    </h2> 
-    
-    <div class="w3-center">
-      
-  
-          <img
-        src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fcreate-new-1.jpg?v=1598073104854"
-        alt="photoshop-create-new-1"
-        class="w3-image"
-                 style="width:100%;max-width:500px"
-      />
-    
-    <br>
-    <p>
-      The look of this may vary depending on what version you are using.
-    </p>
-    
-              <img
-        src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fcreate-new-2.png?v=1598073106347"
-        alt="photoshop-create-new-2"
-        class="w3-image"
-        style="width:100%;max-width:400px"
-      />
-    
-      </div>
-    
-    <p>
-      1. Open Photoshop.
-<br>
-2. Go to 'File - New' or Press Ctrl/Cmd + N.
-<br>
-3. A window will now open which will have:
-      <li>Name - This is the name of your document.</li>
-      <li>Width - This is the width of your document.</li>
-      <li>Height - This is the height of your document</li>
-      <li>Resolution - This is resolution of your document. 72 PPI is used for Web and 300 PPI is for Print. PPI stand for 'PixelsPerInch'</li>
-      <li>Color Mode - This is the colour type for your document. I suggest you leave it as RGB Color for now and keep it as 8 Bit</li>
-      <li>Background Contents - This is what your background will be. I suggest you leave it as White.</li>
-      <li>Advance Settings - This is for advance users. You can just leave it as it is.</li>
-     <br> 
-4. Once you have selected the setting you want, click 'OK'.
-<br>
-Hear are some common document sizes:
-      <br>
-      <br>
-      <li>720p - 1280x720 @ 72 PPI</li>
-      <li>1080p - 1920x1080 @ 72 PPI</li>
-      <li>A4 - 595x842 @ 72 PPI OR 2480x3508 @ 300 PPI</li>
-      <li>A3 - 842x1191 @ 72 PPI OR 3508x4962 @ 300 PPI</li>
-    </p>
-    
-         <h2>
-           Basic Tools
-         </h2>
-    
-           <div class="w3-center">
-         
-                  <img
-        src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fbasic-tools.png?v=1598074701056"
-        alt="basic-tools"
-        class="w3-image"
-        style="width:100%;max-width:400px"
-      />
-         </div>
-  
-    <p>
-    
-      Move Tool:
-      <li>This tool can be used to move items around</li>
-
-Marquee Tool:
-      <li>This tool can be used to make selections. There are four different types which are:</li>
-      <li>Rectangular - This will make a Rectangular selection</li>
-      <li>Elliptical - This will make a Elliptical selection</li>
-      <li>SingleColumn - This will make a Column selection</li>
-      <li>SingleRow - This will make a Row selection</li>
-
-Lasso:
-      <li>This tool can also be used to make selections. There are three different types which are:</li>
-      <li>Lasso - This can make free hand selection</li>
-      <li>PolygonalLasso - This will make selection with lines</li>
-      <li>MagneticLasso - This will make selection by shaping onto objects.</li>
-
-Quick Selection:
-      <li>This tool can be used to make selection of objects by painting on them with an adjustable brush.</li>
-
-Crop:
-      <li>This tool can be used to trim images.</li>
-
-Eraser:
-      <li>This tool can be used to erase pixels of an image.</li>
-
-Brush Tool:
-      <li>Paints a brush stroke.</li>
-
-Pencil Tool:
-      <li>Paints are hard-edge stroke.</li>
-
-Gradient:
-      <li>This tool can be used to make a straight-line, radial, angle, reflected, and diamond blends between colors.</li>
-
-Paint Bucket:
-      <li>Fills similar coloured areas with the foreground colour</li>
-
-Pen:
-      <li>This tool can be used to create smooth-edged paths. You can use the Freeform Pen to create paths free-handed.</li>
-
-Type Tool:
-      <li>This tools creates a text box which can be used to type text into.</li>
-
-Shape Tools:
-      <li>These tools can be used to create shapes. There are six different types of shape tools which are:</li>
-      <li>Rectangle</li>
-      <li>Rounded Rectangle</li>
-      <li>Ellipse</li>
-      <li>Polygon</li>
-      <li>Line</li>
-      <li>Custom Shape</li>
-
-Hand:
-      <li>This tool can be used to move an image within the window.</li>
-
-Zoom:
-      <li>Zoom in and out.</li>
-         </p>
-    
-    
+    <div class="w3-bar w3-black">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="overview.html" class="w3-bar-item w3-button w3-hide-small"
+        >Overview</a
+      >
+      <a href="apps.html" class="w3-bar-item w3-button w3-hide-small"
+        >Applications</a
+      >
+      <a
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="myFunction()"
+        >&#9776;</a
+      >
     </div>
-    </body>
+
+    <div
+      id="demo"
+      class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
+    >
+      <a href="overview.html" class="w3-bar-item w3-button">Overview</a>
+      <a href="apps.html" class="w3-bar-item w3-button">Applications</a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+
+    <!--Main Content-->
+
+    <div class="w3-container w3-round w3-row w3-col s12 m12 l12">
+      <h2>
+        Creating New Project
+      </h2>
+
+      <div class="w3-center">
+        <img
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fcreate-new-1.jpg?v=1598073104854"
+          alt="photoshop-create-new-1"
+          class="w3-image"
+          style="width:100%;max-width:500px"
+        />
+
+        <br />
+        <p>
+          The look of this may vary depending on what version you are using.
+        </p>
+
+        <img
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fcreate-new-2.png?v=1598073106347"
+          alt="photoshop-create-new-2"
+          class="w3-image"
+          style="width:100%;max-width:400px"
+        />
+      </div>
+
+      <p>
+        1. Open Photoshop.
+        <br />
+        2. Go to 'File - New' or Press Ctrl/Cmd + N.
+        <br />
+        3. A window will now open which will have:
+        <li>Name - This is the name of your document.</li>
+        <li>Width - This is the width of your document.</li>
+        <li>Height - This is the height of your document</li>
+        <li>
+          Resolution - This is resolution of your document. 72 PPI is used for
+          Web and 300 PPI is for Print. PPI stand for 'PixelsPerInch'
+        </li>
+        <li>
+          Color Mode - This is the colour type for your document. I suggest you
+          leave it as RGB Color for now and keep it as 8 Bit
+        </li>
+        <li>
+          Background Contents - This is what your background will be. I suggest
+          you leave it as White.
+        </li>
+        <li>
+          Advance Settings - This is for advance users. You can just leave it as
+          it is.
+        </li>
+        <br />
+        4. Once you have selected the setting you want, click 'OK'.
+        <br />
+        Hear are some common document sizes:
+        <br />
+        <br />
+        <li>720p - 1280x720 @ 72 PPI</li>
+        <li>1080p - 1920x1080 @ 72 PPI</li>
+        <li>A4 - 595x842 @ 72 PPI OR 2480x3508 @ 300 PPI</li>
+        <li>A3 - 842x1191 @ 72 PPI OR 3508x4962 @ 300 PPI</li>
+      </p>
+
+      <h2>
+        Basic Tools
+      </h2>
+
+      <div class="w3-center">
+        <img
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fbasic-tools.png?v=1598074701056"
+          alt="basic-tools"
+          class="w3-image"
+          style="width:100%;max-width:400px"
+        />
+      </div>
+
+      <p>
+        Move Tool:
+        <li>This tool can be used to move items around</li>
+
+        Marquee Tool:
+        <li>
+          This tool can be used to make selections. There are four different
+          types which are:
+        </li>
+        <li>Rectangular - This will make a Rectangular selection</li>
+        <li>Elliptical - This will make a Elliptical selection</li>
+        <li>SingleColumn - This will make a Column selection</li>
+        <li>SingleRow - This will make a Row selection</li>
+
+        Lasso:
+        <li>
+          This tool can also be used to make selections. There are three
+          different types which are:
+        </li>
+        <li>Lasso - This can make free hand selection</li>
+        <li>PolygonalLasso - This will make selection with lines</li>
+        <li>
+          MagneticLasso - This will make selection by shaping onto objects.
+        </li>
+
+        Quick Selection:
+        <li>
+          This tool can be used to make selection of objects by painting on them
+          with an adjustable brush.
+        </li>
+
+        Crop:
+        <li>This tool can be used to trim images.</li>
+
+        Eraser:
+        <li>This tool can be used to erase pixels of an image.</li>
+
+        Brush Tool:
+        <li>Paints a brush stroke.</li>
+
+        Pencil Tool:
+        <li>Paints are hard-edge stroke.</li>
+
+        Gradient:
+        <li>
+          This tool can be used to make a straight-line, radial, angle,
+          reflected, and diamond blends between colors.
+        </li>
+
+        Paint Bucket:
+        <li>Fills similar coloured areas with the foreground colour</li>
+
+        Pen:
+        <li>
+          This tool can be used to create smooth-edged paths. You can use the
+          Freeform Pen to create paths free-handed.
+        </li>
+
+        Type Tool:
+        <li>
+          This tools creates a text box which can be used to type text into.
+        </li>
+
+        Shape Tools:
+        <li>
+          These tools can be used to create shapes. There are six different
+          types of shape tools which are:
+        </li>
+        <li>Rectangle</li>
+        <li>Rounded Rectangle</li>
+        <li>Ellipse</li>
+        <li>Polygon</li>
+        <li>Line</li>
+        <li>Custom Shape</li>
+
+        Hand:
+        <li>This tool can be used to move an image within the window.</li>
+
+        Zoom:
+        <li>Zoom in and out.</li>
+      </p>
+
+      <h2>
+        Layers, Groups and Guides
+      </h2>
+
+      <div class="w3-center">
+        <img
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Flayers2.png?v=1598076003316"
+          alt="layers2"
+          class="w3-image"
+          style="width:100%;max-width:400px"
+        />
+        <br />
+        <br />
+        <img
+          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Flayers.jpg?v=1598076008629"
+          alt="layers1"
+          class="w3-image"
+          style="width:100%;max-width:400px"
+        />
+      </div>
+
+      <p>
+        Layers are what they say there are, Layers. Layers are very useful in
+        Photoshop. Each layer is an individual which means you can edit it
+        without editing any of the other layers.
+        <br />
+        CreateNew Layer. To create a new layer go into 'Layer - New - Layer' or
+        by click the box with folded conner at the bottom right hand conner of
+        the window.
+        <br />
+        <li>
+          LockingLayers. Layers can be locked which means that they can't be
+          edited until you unlock it. There are Three different types of Locks.
+        </li>
+        <li>
+          LockTransparentPixels - This will make the pixels you erase black
+          instead of getting rid of them.
+        </li>
+        <li>
+          LockImagePixels - This will mean you can't change the pixels into
+          anything such as colouring it in.
+        </li>
+        <li>
+          LockPosition - This will mean you are not able to move the image.
+        </li>
+        <li>
+          The last one will lock everything which mean you will not be able to
+          edit it at all.
+        </li>
+
+        <b>HidingLayer.</b> Layer can be hid by press the 'Eye' icon next to the
+        layer. Click it again and the layer will be visible again.
+        <br />
+        <br />
+        <b>LayerStyle.</b> This are some setting that can be changes to make the
+        layer look different. To open the layer style window just double click
+        the layer which will open a new window. Some things you can do are:
+        <br />
+        <br />
+        <li>Opacity - Change the opacity of the layer.</li>
+        <li>Stroke - Put an outline on the layer.</li>
+        <li>
+          InnerShadow - Puts a shadow inside the layer which give it an effect
+          of it is going inside.
+        </li>
+        <li>InnerGlow - Put a glow on the inside.</li>
+        <li>ColorOverlay - Put a colour on top of the layer.</li>
+        <li>GradientOverlay - Put a gradient on top of the layer.</li>
+        <li>PatternOverlay - Put a pattern on top of the layer.</li>
+        <li>OuterGlow - Put a glow outside the layer.</li>
+        <li>
+          DropShadow - Put a shadow underneath the layer which give the effect
+          of it floating.
+        </li>
+
+        <b>Groups. </b>Groups are used to organise your layer. You can create a
+        group by clicking on the folder button at the button right hand conner
+        of the window.
+        <br />
+        <b>Guides.</b> Guides are very useful. To make a new guide go to 'View -
+        New Guide'. This will bring up a new window. You can choose weather the
+        guide is vertical or horizontal. Then write where it is. I recommend you
+        use '%'. I suggest when you start a new project you make two guides, one
+        vertical at 50% and the other horizontal at 50%.
+      </p>
+
+      <h2>
+        Filters and Image Adjustments
+      </h2>
+
+      <p>
+        NOTE: For this section you will need a picture. Make sure your photo
+        hasn't been edited.
+        <br />
+        <br />
+        1. Open Photoshop.
+        <br />
+        2. Go to 'File - Open' or Click 'Ctrl/Cmd + O'. Then select the photo
+        you have choosen.
+
+        <br />
+        <br />
+        <b>ImageAdjustments.</b>
+        <br />
+        <b>Brightness and Contrast</b>
+        1. Go to 'Image - Adjustments - Brightness/Contrast'<br />
+        2. You will now see two sliders, one for the brightness and the other
+        for contrast. Play around with the slider till you think your photo
+        looks better
+        <br />
+        <b>Vibrane</b>
+        1. Go to 'Image - Adjustments - Vibrance'<br />
+        2. You will now see to slider, one for vibrance and the other for
+        saturation. Play around with the slider till you think your photo looks
+        better.
+        <br />
+        There are a lot of other settings you can change. If you want to know
+        what they all do you should play around with them. The main reason you
+        would use them is to change the colour of a picture.
+        <br />
+        <b>Filters.</b>
+        1. Go to 'Filter - Filter Gallery'. This will open a new window. You
+        might have to the zoom from '100%' to 'Fit in View'. This is located at
+        the bottom left corner of the window.<br />
+        2. You will have a lot of different filters so the best thing to do is
+        look at all of them and pick the best one.
+      </p>
+    </div>
+  </body>
 </html>

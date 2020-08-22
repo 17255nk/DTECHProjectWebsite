@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
     <div class="w3-row w3-col s12 m12 l12">
-      
       <!--Header-->
 
       <div
@@ -34,34 +33,43 @@
 
       <!--Nav Bar-->
 
-
       <div style="margin-left:25%"></div>
 
-     <div class="w3-bar w3-black">
-  <a href="index.html" class="w3-bar-item w3-button">Home</a>
-  <a href="overview.html" class="w3-bar-item w3-button w3-hide-small">Overview</a>
-  <a href="apps.html" class="w3-bar-item w3-button w3-hide-small">Applications</a>
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-</div>
+      <div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="overview.html" class="w3-bar-item w3-button w3-hide-small"
+          >Overview</a
+        >
+        <a href="apps.html" class="w3-bar-item w3-button w3-hide-small"
+          >Applications</a
+        >
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="myFunction()"
+          >&#9776;</a
+        >
+      </div>
 
-<div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-  <a href="overview.html" class="w3-bar-item w3-button">Overview</a>
-  <a href="apps.html" class="w3-bar-item w3-button">Applications</a>
-</div>
+      <div
+        id="demo"
+        class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a href="overview.html" class="w3-bar-item w3-button">Overview</a>
+        <a href="apps.html" class="w3-bar-item w3-button">Applications</a>
+      </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("demo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script> 
-      
-    
-      
+      <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+      </script>
+
       <!--Text-->
 
       <div class="w3-container w3-round w3-row w3-col s12 m12 l12">
@@ -76,31 +84,26 @@ function myFunction() {
 
       <!--SLIDESHOW-->
 
-      <div class="w3-content w3-section" style="max-width:500px">
+      <div class="w3-content w3-section w3-center">
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fphotoshopslideshow.png?v=1597709216453"
-          style="width:100%"
         />
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fpremiereproslideshow.png?v=1597709277457"
-          style="width:100%"
         />
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fillustratorslideshow.png?v=1597709200150"
-          style="width:100%"
         />
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Flightroomscreenshot.png?v=1597709207825"
-          style="width:100%"
         />
         <img
           class="mySlides"
           src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Faftereffectsslideshow.jpg?v=1597709285645"
-          style="width:100%"
         />
       </div>
 

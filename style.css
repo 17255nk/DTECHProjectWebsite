@@ -1,6 +1,6 @@
 /***Main Styles****/
 <style > body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: "Antic Slab", "arial", sans-serif;
   margin: 2em;
 }
 
@@ -29,7 +29,7 @@ li {
 }
 
 h5 {
-  font-family: "Antoc Slab", serif;
+  font-family: "Antic Slab", serif;
 }
 
 /***Images***/
@@ -66,4 +66,15 @@ p {
   width: 13px;
   padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+</style>
 </style>

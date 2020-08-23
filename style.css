@@ -1,6 +1,8 @@
 /***Main Styles****/
+
 <style > body {
-  font-family: "Antic Slab", "arial", sans-serif;
+  font-family: "Helvetica", "arial", sans-serif;
+  font-family: "Antic Slab", "Allerta Stencil", sans-serif;
   margin: 2em;
 }
 
@@ -9,7 +11,6 @@
 h1 {
   font-style: bold;
   color: white;
-  font-family: "Antic Slab", serif;
 }
 
 body {
@@ -28,9 +29,10 @@ li {
   font-family: "Antic Slab", serif;
 }
 
-h5 {
-  font-family: "Antic Slab", serif;
+h1 {
+  font-family: "Allerta Stencil", sans-serif;
 }
+
 
 /***Images***/
 

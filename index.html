@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>12DTEC Website</title>
-    
+
     <!--Stylesheets & Setup stuff-->
 
     <meta charset="utf-8" />
@@ -20,20 +20,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
-    
-    
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Allerta+Stencil"
+    />
   </head>
   <body>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
-    
-       <!--CONTENT BEGINS HERE-->
-    
-    
+    <!--CONTENT BEGINS HERE-->
+
     <div class="w3-row w3-col s12 m12 l12">
-      
       <!--Header-->
 
       <div
@@ -70,8 +68,8 @@
         <a href="apps.html" class="w3-bar-item w3-button">Applications</a>
       </div>
 
-          <!--Javascript for Nav Bar-->
-      
+      <!--Javascript for Nav Bar-->
+
       <script>
         function myFunction() {
           var x = document.getElementById("demo");
@@ -88,74 +86,70 @@
       <div class="w3-container w3-round w3-row w3-col s12 m12 l12">
         <h2>A Guide on the Basics</h2>
         <p>
-          This website serves as a simple guide for the very basics of a couple of the apps on the Adobe
-          Creative Cloud Service, you can find useful information on the most
-          popular apps such as Photoshop, Premiere Pro, After Effects,
-          Illustrator & Lightroom.
+          This website serves as a simple guide for the very basics of a couple
+          of the apps on the Adobe Creative Cloud Service, you can find useful
+          information on the most popular apps such as Photoshop, Premiere Pro,
+          After Effects, Illustrator & Lightroom.
         </p>
       </div>
 
-      
-       <div class="w3-container">
-        
-      <!--Slideshow will go here-->
+      <div class="w3-container">
+        <!--Slideshow will go here-->
 
-     
-      
-      <div class="w3-content w3-section w3-center">
-        <img
-          class="mySlides"
-          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fphotoshopslideshow.png?v=1597709216453"
-        />
-        <img
-          class="mySlides"
-          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fpremiereproslideshow.png?v=1597709277457"
-        />
-        <img
-          class="mySlides"
-          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fillustratorslideshow.png?v=1597709200150"
-        />
-        <img
-          class="mySlides"
-          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Flightroomscreenshot.png?v=1597709207825"
-        />
-        <img
-          class="mySlides"
-          src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Faftereffectsslideshow.jpg?v=1597709285645"
-        />
+        <div class="w3-content w3-section w3-center">
+          <img
+            class="mySlides"
+            src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fphotoshopslideshow.png?v=1597709216453"
+            alt="photoshop-slide"
+          />
+          <img
+            class="mySlides"
+            src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fpremiereproslideshow.png?v=1597709277457"
+            alt="premiere-slide"
+          />
+          <img
+            class="mySlides"
+            src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Fillustratorslideshow.png?v=1597709200150"
+            alt="illustrator-slide"
+          />
+          <img
+            class="mySlides"
+            src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Flightroomscreenshot.png?v=1597709207825"
+            alt="lightroom-slide"
+          />
+          <img
+            class="mySlides"
+            src="https://cdn.glitch.com/144dc398-498e-4a9a-acb9-57b59752ddf2%2Faftereffectsslideshow.jpg?v=1597709285645"
+            alt="aftereffects-slide"
+          />
+        </div>
+
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+              myIndex = 1;
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+          }
+        </script>
       </div>
 
-      <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          myIndex++;
-          if (myIndex > x.length) {
-            myIndex = 1;
-          }
-          x[myIndex - 1].style.display = "block";
-          setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-      </script>
-      
-    </div>
-      
-   
       <div class="w3-container">
-  <div class="w3-panel w3-leftbar w3-light-grey">
-    <p class="w3-xlarge w3-serif"><i>""</i></p>
-    <p>Tom English
-    </p>
-  </div>
-</div>
-      
-
+        <div class="w3-panel w3-leftbar w3-light-grey">
+          <p class="w3-xlarge w3-serif"><i>""</i></p>
+          <p>Tom English</p>
+        </div>
+      </div>
 
       <!--Images-->
       <img
@@ -163,24 +157,20 @@
         alt="Adobe CC Apps"
         class="w3-image"
       />
-      
-      
+
       <!--Footer-->
-      
+
       <footer class="w3-container w3-indigo">
-        
         <h5>Site by Neeraj Kala</h5>
         <b>References:</b>
-    <p>
-      https://en.wikipedia.org/wiki/Adobe_Photoshop<br>
-      https://en.wikipedia.org/wiki/Adobe_Premiere_Pro<br>
-      https://en.wikipedia.org/wiki/Adobe_Illustrator<br>
-      https://en.wikipedia.org/wiki/Adobe_Lightroom<br>
-      https://en.wikipedia.org/wiki/Adobe_After_Effects<br>
+        <p>
+          https://en.wikipedia.org/wiki/Adobe_Photoshop<br />
+          https://en.wikipedia.org/wiki/Adobe_Premiere_Pro<br />
+          https://en.wikipedia.org/wiki/Adobe_Illustrator<br />
+          https://en.wikipedia.org/wiki/Adobe_Lightroom<br />
+          https://en.wikipedia.org/wiki/Adobe_After_Effects<br />
         </p>
-    </footer>
-
-
+      </footer>
     </div>
   </body>
 </html>
